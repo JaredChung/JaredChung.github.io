@@ -1,1 +1,1 @@
-# JaredChung.github.io
+# Data Science Blog 
