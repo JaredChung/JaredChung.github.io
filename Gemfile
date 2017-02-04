@@ -1,7 +1,9 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-group :jekyll_plugins do
-  gem "jekyll-paginate"
-  gem "jekyll-feed"
-  gem "jekyll"
-end
+gem "jekyll"
+gem "jekyll-paginate"
+gem "susy"
+gem "normalize-scss"
+gem "compass"
+gem "sass"
+gem "support-for"

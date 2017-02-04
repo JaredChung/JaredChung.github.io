@@ -1,21 +1,28 @@
-# Site settings
-title: Clean Blog
-header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-copyright_name: Your/Project/Corporate Name
-description: "Write your site description here. It will be used as your sites meta description as well!"
-url: "jaredchung.github.io"
-email_username:  your-email@yourdomain.com
+title: Long Haul
+description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-# Google Analytics
-# To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id:
+url: http://brianmaierjr.github.com/long-haul
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
 
-# Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: pretty
+gems: [jekyll-paginate]
 paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-gems: [jekyll-paginate, jekyll-feed]
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Contact
+   url: /contact
+
+social:
+   github: brianmaierjr
+   twitter: brianmaierjr
+   facebook: brianmaierjr
+   email: brimaidesigns@gmail.com
+
+google_analytics: "UA-58263416-1"
