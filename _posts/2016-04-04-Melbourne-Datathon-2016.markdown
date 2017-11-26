@@ -5,6 +5,8 @@ date:   2016-05-20 16:23:02 +1000
 categories: hackathon
 ---
 
+![](C:\Users\Jared Chung\Desktop\JaredChung.github.io\_posts\Kaggle_Image.PNG)
+
 The Melbourne Datathon 2016 is a hackathon which was organised by the Melbourne data science meet up group as way to bring data scientists together by solving real world problems. The event started with an introductory night on the 21st of April with sneak peak at the dataset, followed by a full hack day on the 23rd which was held in the Telstra Gurrowa Innovation Lab.
 ​	
 The dataset contained job ads extracted from the <a href="www.seek.com.au">Seek</a> website which is used by companies for recruitment. The competition was broken in two parts, the first part was a challenge to extract interesting insights from the data where the top 5 teams would present their results.
@@ -67,7 +69,7 @@ def lemma_tokens(tokens, lemma):
     return lemmatized
 ```
 
-
+Now the text has been cleaned and simplified, it still isn't ready, this is because machine learning models can't process raw text directly. The strategy then is to convert the text into numbers using a technique called Bag of Words. 
 
 
 ```python
