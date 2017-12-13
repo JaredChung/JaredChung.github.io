@@ -69,7 +69,7 @@ def lemma_tokens(tokens, lemma):
     return lemmatized
 ```
 
-Now the text has been cleaned and simplified, it still isn't ready, this is because machine learning models can't process raw text directly. The strategy then is to convert the text into numbers using a technique called Bag of Words. 
+Now the text has been cleaned and simplified, it still isn't ready, this is because machine learning models can't process raw text directly. The strategy then was to convert the text into numbers using a technique called Bag of Words. The way Bag of Words works is by creating a column for each unique word in the corpus and assigning a "1" if a word is present and "0" otherwise. In addition, I used modified version which factors in the frequency of this words occurring across the corpus and adjusting the weighting down if the word occurs often. Luckily Scikit-learn package has a simple function which does the majority of the heavy lifting as shown below.
 
 
 ```python
