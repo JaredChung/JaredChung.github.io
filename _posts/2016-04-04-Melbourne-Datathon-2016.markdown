@@ -69,7 +69,7 @@ def lemma_tokens(tokens, lemma):
     return lemmatized
 ```
 
-Now the text has been cleaned and simplified, it still isn't ready, this is because machine learning models can't process raw text directly. The strategy then was to convert the text into numbers using a technique called Bag of Words. The way Bag of Words works is by creating a column for each unique word in the corpus and assigning a "1" if a word is present and "0" otherwise. In addition, I used modified version which factors in the frequency of this words occurring across the corpus and adjusting the weighting down if the word occurs often. Luckily Scikit-learn package has a simple function which does the majority of the heavy lifting as shown below.
+Once the text had been cleaned and simplified, there are still additional steps, this is because machine learning models can't process raw text directly. The strategy then was to convert the text into numbers using a technique called Bag of Words. The way Bag of Words works is by creating a column for each unique word in the corpus and assigning a "1" if a word is present and "0" otherwise. In addition, I used modified version which factors in the frequency of this words occurring across the corpus and adjusting the weighting down if the word occurs often. Luckily Scikit-learn package has a simple function which does the majority of the heavy lifting as shown below.
 
 
 ```python
@@ -80,10 +80,11 @@ train_X_tfidf =  tfidf_vectorizer.transform(train_X)
 test_X_tfidf = tfidf_vectorizer.transform(test_X)
 ```
 
-
 ## Part 3 - Modelling
 
-```
+After the data had been processed into the appropriate format, it was now time to start the modelling process. The main models I tested for this competition included Logistic Regression, Naive Bayes, Support Vector Machine, Random Forecast and Gradient Boosted Trees. Although some of the methods I attempted to use were quite advance, the method which ended up with the best accuracy was the relatively simple Logistic Regression.
+
+```python
 from sklearn.linear_model import LogisticRegressionCV
 logreg = LogisticRegressionCV(class_weight = 'balanced',cv = 5,scoring='roc_auc',n_jobs=-1,random_state=42)
 logreg.fit(train_X_tsvd, train_Y)
@@ -92,5 +93,6 @@ print "Score %.5f +/- %.5f " % (logreg.scores_[1].mean(),logreg.scores_[1].std()
 
 
 
-## Part 4 - Conclusion
+## Concluding Remarks
 
+In conclusion, this competition was an interesting experience and allowed me apply text mining skills as well as applying a variety of machine learning algorithms. In spite of the fact of the advancement in algorithms, in some cases, a simple model is the most effective.
