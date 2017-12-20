@@ -95,4 +95,4 @@ print "Score %.5f +/- %.5f " % (logreg.scores_[1].mean(),logreg.scores_[1].std()
 
 ## Concluding Remarks
 
-In conclusion, this competition was an interesting experience and allowed me apply text mining skills as well as applying a variety of machine learning algorithms. In spite of the fact of the advancement in algorithms, in some cases, a simple model is the most effective.
+In conclusion, this competition was an interesting experience and allowed me to utilize my text mining skills as well as applying a variety of machine learning algorithms. Despite the advancements in algorithms, in some cases, a simple model is the most effective. This reiterates the bias and variance tradeoff and how some models 

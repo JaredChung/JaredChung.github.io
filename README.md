@@ -1,3 +1,1 @@
-![preview Long Haul](/preview.jpg)
-
-
+<h1> Jared Chung Data Science Blog </h1>

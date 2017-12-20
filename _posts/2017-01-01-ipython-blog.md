@@ -1,14 +1,11 @@
 ---
 layout: post
-title:  "ipython notebook"
-date:  2017-01-01 15:10:02 +1000
-categories: python
+title:  "blank"
+date:  2016-06-01 15:10:02 +1000
+categories: python	
 ---
 
-# Testing Ipython Notebook in Blog
 
-fasfafasdf
 
-```python
 
-```
+
