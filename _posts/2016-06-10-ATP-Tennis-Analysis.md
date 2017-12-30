@@ -2,7 +2,7 @@
 layout: post
 title:  "ATP Men’s Tennis Analysis using the R package GGPlot2"
 date:  2016-06-01 15:10:02 +1000
-categories: python	
+categories: R
 ---
 
 I’m a huge tennis fan, so I decided, why not write a blog post on one of my favorite sports. In this blog, I will be using the programming software R to explore historical data on tennis competitions and generate interesting insights about the tennis players and the game itself.
@@ -11,7 +11,7 @@ I’m a huge tennis fan, so I decided, why not write a blog post on one of my fa
 
 The data set used in this analysis was acquired from http://www.tennis-data.co.uk/alldata.php which contains ATP matches from 2000-2016. Just as a general background, the ATP (Association of Tennis Professionals) is an association which organizes worldwide tennis tour for men and women.
 
-The main package we’ll be using for this analysis is **tidyverse** by Hadley Wickham which contains powerful packages like **\*GGPlot2** for *data visualisations and **Dplyr **for data manipulation.
+The main package we’ll be using for this analysis is **tidyverse** by Hadley Wickham which contains powerful packages like **GGPlot2** for data visualisations and **Dplyr **for data manipulation.
 
 The data set contains 46652 matches and 54 columns which is a decent amount of information to work with. Although there is quite a lot of features in the data set, I won’t be using all of them. The table below gives a small peak at what the data looks like. It has some useful information like the Winner, Loser, Tournament and even what Surface they played on.
 
